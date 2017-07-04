@@ -7,7 +7,7 @@ def fizz_buzz(argument):
         divisible by 3 or 5, the number itself should be returned.
     """
 
-    if isinstance(argument, int):
+    if isinstance(argument, int) and argument > 0:
         if argument % 3 == 0 and argument % 5 == 0:
             return 'fizzBuzz'
         elif argument % 3 == 0 and argument % 5 > 0:
