@@ -35,6 +35,12 @@ class TestDataType(unittest.TestCase):
     def test_str_type(self):
         self.assertEqual(6, data_type.data_type('andela'))
 
+    # Test if output is True if the input is a function
+    def test_function_type(self):
+        def a_function():
+            pass
+        self.assertTrue(data_type.data_type(a_function()))
+
 
 if __name__ == "__main__":
     unittest.main()
