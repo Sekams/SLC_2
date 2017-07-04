@@ -9,11 +9,11 @@ def fizz_buzz(argument):
 
     if isinstance(argument, int):
         if argument % 3 == 0 and argument % 5 == 0:
-            return 'FizzBuzz'
+            return 'fizzBuzz'
         elif argument % 3 == 0 and argument % 5 > 0:
-            return 'Fizz'
+            return 'fizz'
         elif argument % 5 == 0 and argument % 3 > 0:
-            return 'Buzz'
+            return 'buzz'
         else:
             return argument
     else:
